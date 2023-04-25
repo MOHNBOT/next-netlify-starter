@@ -4,20 +4,23 @@ import Footer from '@components/Footer'
 
 export default function Home() {
   return (
-    <div className="container">
-      <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT API Integration</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Chat with ChatGPT 3.5 Turbo</h1>
+    <form id="chat-form">
+        <label for="user-input">Your message:</label>
+        <input type="text" id="user-input" name="user-input">
+        <button type="submit">Send</button>
+    </form>
+    <div id="response-container"></div>
 
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
-
-      <Footer />
-    </div>
-  )
-}
+    <script src="script.js"></script>
+</body>
+</html>
